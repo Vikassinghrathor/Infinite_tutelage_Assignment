@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="header-component flex items-center justify-between px-6 py-5">
+    <div className="header-component flex items-center justify-between px-6 py-5 w-[1194px] h-[75px]">
       {/* Dashboard Title */}
       <div className="text-lg font-semibold text-slate-700">Dashboard</div>
 

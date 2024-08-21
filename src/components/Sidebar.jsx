@@ -1,7 +1,7 @@
 function Sidebar() {
   return (
-    <div className="sidebar flex flex-col border-r border-solid border-gray-100 h-full overflow-y-auto">
-      <div className="flex flex-col pt-8">
+    <div className="sidebar flex flex-col border-r border-solid border-gray-100 h-full bg-[#9B76D6] text-white w-[241px]">
+      <div className="flex flex-col pt-8" style={{ height: "512px"}}>
         {/* Logo Section */}
         <div className="flex flex-col items-center">
           <div className="flex gap-0.5 items-center text-xs text-lime-300">
@@ -29,7 +29,7 @@ function Sidebar() {
           ].map((item, index) => (
             <div
               key={index}
-              className="flex items-center py-3 px-6 mt-2 hover:bg-violet-500 hover:text-white cursor-pointer"
+              className="flex items-center py-3 px-6 mt-2 hover:bg-gradient-to-l hover:from-[#BEFB7A] hover:via-[#BEFB7A]/0 hover:to-transparent hover:text-[#BEFB7A] cursor-pointer transition-colors duration-200"
             >
               <img
                 loading="lazy"
@@ -44,7 +44,7 @@ function Sidebar() {
       </div>
 
       {/* Bottom Section */}
-      <div className="flex flex-col mt-auto pb-6">
+      <div className="flex flex-col mt-auto pb-6" style={{ marginTop: "194px" }}>
         {[
           { name: "Notifications", iconSrc: "a305683074efd61182baa6af33b1fa3a010e67b168a2bd84635760e7af0dd112" },
           { name: "Settings", iconSrc: "94b4a9b5cc797a613269a43b920bee78c04372d4960ddd8a0f89ff79833cf973" },
@@ -53,7 +53,7 @@ function Sidebar() {
         ].map((item, index) => (
           <div
             key={index}
-            className="flex items-center py-3 px-6 mt-2 hover:bg-violet-500 hover:text-white cursor-pointer"
+            className="flex items-center py-3 px-6 mt-2 hover:bg-gradient-to-l hover:from-[#BEFB7A] hover:via-[#BEFB7A]/0 hover:to-transparent hover:text-[#BEFB7A] cursor-pointer transition-colors duration-200"
           >
             <img
               loading="lazy"
@@ -76,7 +76,7 @@ function Sidebar() {
               alt="Profile"
             />
           </div>
-          <div className="ml-3 text-white">
+          <div className="ml-3">
             <div className="text-base font-medium">Shyam Shakur</div>
             <div className="text-sm mt-1">shyam01.shankur@mail.com</div>
           </div>

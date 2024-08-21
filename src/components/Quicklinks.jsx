@@ -14,13 +14,13 @@ const quickLinks = [
 
 const QuickLinks = () => {
   return (
-    <section className="flex flex-col p-4 text-sm font-medium rounded-xl border-2 border-gray-100 bg-[color:var(--sds-color-background-default-default)] max-w-full md:max-w-[793px] text-slate-700">
+    <section className="p-4 text-sm font-medium rounded-xl border-2 border-gray-100 bg-[color:var(--sds-color-background-default-default)] w-[793px] h-[227px] text-slate-700">
       <h2 className="text-lg font-semibold">Quick Links</h2>
-      <div className="flex flex-wrap gap-2 mt-4">
+      <div className="grid grid-cols-7 gap-2 mt-4 h-[calc(100%-2.5rem)]">
         {quickLinks.map((link, index) => (
-          <div key={index} className="flex items-center gap-2 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
-            <img src={link.icon} alt={link.label} className="w-6 h-6" />
-            <span>{link.label}</span>
+          <div key={index} className="flex flex-col items-center gap-1 p-2 hover:bg-gray-100 rounded-lg cursor-pointer">
+            <img src={link.icon} alt={link.label} className="w-8 h-8" />
+            <span className="text-xs">{link.label}</span>
           </div>
         ))}
       </div>
