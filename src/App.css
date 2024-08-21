@@ -1,8 +1,10 @@
+/* App container */
 .app {
   display: flex;
   min-height: 100vh;
 }
 
+/* Sidebar */
 .sidebar {
   width: 240px;
   flex-shrink: 0;
@@ -10,12 +12,14 @@
   color: white; /* Text color */
 }
 
+/* Main content */
 .main-content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
+/* Header component */
 .header-component {
   height: 60px;
   background-color: #f8fafc; /* Header background color */
@@ -26,9 +30,27 @@
   padding: 10px;
 }
 
+/* Content area with two columns */
 .content {
+  display: flex;
   flex: 1;
   padding: 20px;
   background-color: #f1f5f9; /* Customize the background color */
   overflow-y: auto;
+}
+
+/* Left side (QuickLinks and ReportGraph) */
+.left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between QuickLinks and ReportGraph */
+}
+
+/* Right side (TradingAccount and OpenTrades) */
+.right-side {
+  width: 300px; /* Customize the width if needed */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between TradingAccount and OpenTrades */
 }

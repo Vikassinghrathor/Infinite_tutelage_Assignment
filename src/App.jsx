@@ -11,11 +11,17 @@ const App = () => {
     <div className="app">
       <Sidebar />
       <div className="main-content">
-        <Header />
-        <QuickLinks/>
-        <ReportGraph/>
-        <TradingAccount/>
-        <OpenTrades/>
+        <Header className="header-component" />
+        <div className="content">
+          <div className="left-side">
+            <QuickLinks />
+            <ReportGraph />
+          </div>
+          <div className="right-side">
+            <TradingAccount />
+            <OpenTrades />
+          </div>
+        </div>
       </div>
     </div>
   );
