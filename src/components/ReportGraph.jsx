@@ -29,55 +29,26 @@ function ReportGraph() {
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a2a32f7ce098c4c9611a8996dcdc371868d996b5433e695ad86a1b7930b0d52?placeholderIfAbsent=true&apiKey=ddf789af42b44eaea963851b07583965"
           className="object-contain w-0 stroke-[1px] stroke-gray-200"
         />
-        <div className="flex flex-wrap flex-1 gap-3.5 justify-between items-end w-[793px] h-[325.51px]">
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Jan</div>
-            <div className="bg-violet-400 rounded w-6 h-[189px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Feb</div>
-            <div className="bg-violet-400 rounded w-6 h-[118px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Mar</div>
-            <div className="bg-violet-400 rounded w-6 h-[221px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Apr</div>
-            <div className="bg-violet-400 rounded w-6 h-[63px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">May</div>
-            <div className="bg-violet-400 rounded w-6 h-[254px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Jun</div>
-            <div className="bg-violet-400 rounded w-6 h-[148px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Jul</div>
-            <div className="bg-violet-400 rounded w-6 h-[171px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Aug</div>
-            <div className="bg-violet-400 rounded w-6 h-[85px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Sep</div>
-            <div className="bg-violet-400 rounded w-6 h-[108px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Oct</div>
-            <div className="bg-violet-400 rounded w-6 h-[138px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Nov</div>
-            <div className="bg-violet-400 rounded w-6 h-[33px]" />
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="text-xs">Dec</div>
-            <div className="bg-violet-400 rounded w-6 h-[83px]" />
-          </div>
+        <div className="flex flex-wrap flex-1 gap-3.5 justify-between items-end w-[793px] h-[340.51px]">
+          {[
+            { month: "Jan", height: "189px" },
+            { month: "Feb", height: "118px" },
+            { month: "Mar", height: "221px" },
+            { month: "Apr", height: "63px" },
+            { month: "May", height: "254px" },
+            { month: "Jun", height: "148px" },
+            { month: "Jul", height: "171px" },
+            { month: "Aug", height: "85px" },
+            { month: "Sep", height: "108px" },
+            { month: "Oct", height: "138px" },
+            { month: "Nov", height: "33px" },
+            { month: "Dec", height: "83px" },
+          ].map((item, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="bg-violet-400 rounded w-6" style={{ height: item.height }} />
+              <div className="text-xs mt-2">{item.month}</div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
