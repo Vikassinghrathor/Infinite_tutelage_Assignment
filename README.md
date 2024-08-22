@@ -10,7 +10,7 @@ This project is a dashboard application built with React, Vite, and Tailwind CSS
 - **Trading Account**: Manages trading accounts and displays open trades.
   
 ## Live Link
--: https://infinite-dashboard-1gx7scoed-vikassinghrathors-projects.vercel.app/
+-: https://infinite-dashboard-assignment-fv0tb9vtp.vercel.app/
 
 ## Installation
 
