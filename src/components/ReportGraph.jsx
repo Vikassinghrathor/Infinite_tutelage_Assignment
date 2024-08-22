@@ -1,6 +1,6 @@
 function ReportGraph() {
   return (
-    <div className="flex flex-col px-4 pt-4 pb-8 rounded-xl border-2 border-gray-100 border-solid bg-[color:var(--sds-color-background-default-default)] max-w-full md:max-w-[793px]">
+    <div className="flex flex-col w-[793px] h-[455.51px] px-4 pt-4 pb-8 rounded-xl border-2 border-gray-100 border-solid bg-[color:var(--sds-color-background-default-default)]">
       <div className="flex flex-wrap gap-10 justify-between items-center w-full text-sm font-medium">
         <div className="text-slate-700">Overview</div>
         <div className="flex gap-2 items-center px-2 py-1 text-violet-400">
@@ -29,7 +29,7 @@ function ReportGraph() {
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/6a2a32f7ce098c4c9611a8996dcdc371868d996b5433e695ad86a1b7930b0d52?placeholderIfAbsent=true&apiKey=ddf789af42b44eaea963851b07583965"
           className="object-contain w-0 stroke-[1px] stroke-gray-200"
         />
-        <div className="flex flex-wrap flex-1 gap-3.5 justify-between items-end">
+        <div className="flex flex-wrap flex-1 gap-3.5 justify-between items-end w-[793px] h-[325.51px]">
           <div className="flex flex-col items-center">
             <div className="text-xs">Jan</div>
             <div className="bg-violet-400 rounded w-6 h-[189px]" />
